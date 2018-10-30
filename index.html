@@ -11,10 +11,46 @@
      <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+
 </head>
 <body class="grey lighten-2">
+
+
+<!-- aqui fica a div row -->
+<div class="novo" id="novo">
+	<!-- aqui fica o container -->
 	<div class="container">
-<h1>Meus eventos</h1>
+		<h1 class="grey-text">Cadastrar eventos</h1>	
+		<input type="txt" name="nome" placeholder="Digite o nome do evento">
+		<textarea placeholder="Digite o nome do evento"></textarea>
+		<input type="text" name="latitude" placeholder="Digite a latitude">
+		<input type="text" name="longitude" placeholder="Digite a longitude">
+    </div>
+	<!-- aqui finaliza o container -->
+
+
+</div>
+<!-- aqui fica a div row -->
+
+
+
+
+	<!-- Aqui inicia a navbar -->
+	<nav class= "blue accent-3">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Eventos</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Meus eventos</a></li>
+        <li><a href="badges.html">Eventos passados</a></li>
+        <li><a href="collapsible.html">Meu perfil</a></li>
+      </ul>
+    </div>
+  </nav>
+        <!-- aqui termina -->
+	<div class="container">
+<h1 class="grey-text">Meus eventos</h1>
 
 <!-- Aqui inicia o Card -->
 <div class="row">
@@ -23,7 +59,31 @@
         <div class="card-image">
           <img src="https://materializecss.com/images/sample-1.jpg">
           <span class="card-title">Card Title</span>
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light red blue accent-3"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://materializecss.com/images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red blue accent-3"><i class="material-icons">add</i></a>
+        </div>
+        <div  class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://materializecss.com/images/sample-1.jpg">
+          <span class="card-title">Card Title</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red blue accent-3"><i class="material-icons">add</i></a>
         </div>
         <div class="card-content">
           <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
@@ -34,7 +94,7 @@
 <!-- Aqui Finaliza o Card -->
 </div>
 
-<div class="fixed-action-btn">
+<div class="fixed-action-btn" onclick="novo()">
   <a class="btn-floating btn-large red green accent-4">
     <i class="large material-icons">add</i>
   </a>
@@ -45,6 +105,10 @@
     <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
   </ul>
 </div>
+
+<script type="text/javascript" src="js/function.js"></script>
+
+
 
 </body>
 </html>
